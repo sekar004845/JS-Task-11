@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Task-11--Dom </title>
+<meta rel="viewport"href="width=device-width,initial-scale=1.0">
+</head> 
+<body>
+<h1> Click The Button The Content Will Show Using JavaScript</h1>
+<h2 class="head">Heading-1</h2>
+<h2>Heading-2 </h2>
+<p id="name">Paragraph</p>
+<button onclick="add()">Click me</button>
+
+<script>
+	
+	
+	
+
+	
+			
+		function add(){	
+		let sectionElement=document.createElement('section')
+	        document.body.appendChild(sectionElement)
+			
+	let containerElement=document.createElement('container')
+	        sectionElement.appendChild(containerElement)
+
+	let divElement=document.createElement('div');
+		    containerElement.appendChild(divElement);
+			
+		let headElement=document.createElement('h1');
+		    headElement.innerText="Header section";
+			 divElement.appendChild(headElement);
+			 
+		let headElement1=document.createElement('h3');
+		    headElement1.innerText="Indian Captain ROHIT SHARMA";
+			 divElement.appendChild(headElement1);
+	
+	   let paraElement=document.createElement('p');
+	     paraElement.innerText="Playing a pull shot very good and he is called THE HITMAN";
+		   divElement.appendChild(paraElement);
+		   
+	   let paraElement1=document.createElement('p');
+	     paraElement1.innerText="He has a highest individual scores in one day international";
+		   divElement.appendChild(paraElement1);
+		
+		 let buttonElement=document.createElement('button');
+	     buttonElement.innerText="Get started";
+		   divElement.appendChild(buttonElement);
+		   
+		  
+		   }
+		
+		
+		  
+</script>
+</body>
+</html>
